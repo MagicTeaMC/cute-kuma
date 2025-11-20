@@ -127,12 +127,17 @@ a:not(.btn):focus-visible {
 
 /* Wrapper for logo and title */
 .title-flex {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   margin-bottom: var(--spacing-32) !important;
 }
 
 /* Center the logo */
 .logo-wrapper {
-  margin: 0 auto;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
 }
 
 /* Resize the logo */
@@ -143,12 +148,14 @@ a:not(.btn):focus-visible {
 
 /* Remove the margin of the logo */
 [dir="ltr"] .logo {
-  margin-right: 0 !important;
+  margin-right: var(--spacing-12) !important;
 }
 
 /* Remove the title adjacent to the logo */
 span[data-v-7d4a7f28] {
-  display: none;
+  color: var(--color-text-heading);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-350);
 }
 
 /* ADMIN BUTTONS
